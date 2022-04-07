@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wienls | My Account</title>
+    <link rel="icon" href="images/Group 120.png">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- start navbar -->
+    <div class="Navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="70px" height="70px" alt=""> </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Offers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="partener.html"> Become a partner</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="allResturant.html">All Resturants</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="right my-2 my-lg-0">
+                        <img src="images/Group 1016.png">
+                        <a href="account.html"><span>My Account</span> </a>
+                    </div>
+
+                </div>
+               
+            </nav>
+            
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- toggle sidebar -->
+    <div class="bars">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="55px" height="55px" alt=""> </a>
+            <i class="barToggle fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <button class="close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="">
+            <ul class="navbar-nav m-auto">
+                        
+                <li class="nav-item">
+                    <a class="bar-item nav-link" href="index.html">Offers</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="bar-item nav-link" href="partener.html"> Become Apartener</a>
+                </li> 
+                <li class="nav-item ">
+                    <a class="bar-item nav-link" href="allResturant.html">All Resturant</a>
+                </li> 
+
+            </ul>
+            <div class="right">
+                <img src="images/Group 1016.png">
+                <a href="account.html"><span>My Account</span> </a>
+            </div>
+        </div>
+    </div>
+    <!-- toggle sidebar -->
+
+
+    <!-- start account info -->
+    <div class="account accordion" id="accordionExample">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="account-list">
+
+                        <div class="card-header" id="headingOne">
+                            <!-- <h2 class="mb-0"> -->
+                              <a class="btn btn-link btn-block text-left active" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                My Orders
+                              </a>
+                            <!-- </h2> -->
+                        </div> <!--end col one-->
+
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Account Info
+                              </a>
+                            </h2>
+                        </div> <!--end col two-->
+
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <a class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                saved address
+                              </a>
+                            </h2>
+                        </div> <!--end col three-->
+
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <a class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                My Wallet
+                              </a>
+                            </h2>
+                        </div> <!--end col four-->
+
+                    </div>
+                </div>  <!-- end col -->
+
+
+                <div class="col-lg-8">
+                    <div class="account-info">
+                        
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="table-options d-flex justify-content-center">
+                                <a class="p-2 "  href="account.html">New Orders</a>
+                                <a class="p-2 " href="order-progress.html">Orders in progress</a>
+                                <a class="p-2" href="order-delivery.html">Orders in delivery</a>
+                                <a  class="p-2 active" href="order-expired.html">Expired orders</a>
+                            </div>
+                            <div class="card-body my-orders">
+                                <table class="table table-responsive-lg table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Items</th>
+                                        <th scope="col">Resturant</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Total price</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">Review</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>Burger , pizza , sandwich</td>
+                                        <td>Pizza hut</td>
+                                        <td>Avaliable</td>
+                                        <td class="text-center">19/5/1998 <br> 84:45 AM</td>
+                                        <td>50 $</td>
+                                        <td>
+                                            <button onclick="ViewPage();">View</button>
+                                        </td>
+                                        <td>
+                                            <button class="review" data-toggle="modal" data-target="#reviewModal">Review</button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>Burger , pizza , sandwich</td>
+                                        <td>Pizza hut</td>
+                                        <td>Not avaliable</td>
+                                        <td class="text-center">19/5/1998 <br> 84:45 AM</td>
+                                        <td>50 $</td>
+                                        <td>
+                                            <button type="submit" onclick="ViewPage();">View</button>
+                                        </td>
+                                        <td>
+                                            <button class="review" data-toggle="modal" data-target="#reviewModal">Review</button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>  <!--end col one-->
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="name">
+                                        <label for="" class="">Name:</label>
+                                        <input type="text" class="" placeholder="First name"> <br>
+                                    </div>
+
+                                    <div class="email">
+                                        <label for="" class="">Email:</label>
+                                        <input type="email" class="" placeholder="E-mail">
+                                    </div>
+
+                                    <label class="gender">Gender</label>
+                                    <div class="form-inline">
+                                        <div class="form-check form-check-inline ">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline ">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="date">
+                                        <label for="">Date Of Birth:</label>
+                                        <input type="date" class="" >
+                                    </div>
+                                    <button>Save changes</button>
+                                  </form>
+                            </div>
+                        </div>  <!--end col two--> 
+
+                        <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="frist-info">
+                                  <span>Address Name</span>
+                                  <span>El Magzar</span>
+                                  <button data-toggle="modal" data-target="#addaddress">ADD</button>
+                              </div>
+                              <div class="second-info">
+                                <span>Address</span>
+                                <span>El Magzar</span>
+                              </div>
+                            <div class="third-info">
+                                <span>Mobile</span>
+                                <span>002012452156</span>
+                                <div class="icons">
+                                    <button data-toggle="modal" data-target="#modaleditaddress"><i class="fas fa-edit edit"></i></button> 
+                                     <button  > <i class="fas fa-trash-alt delete"></i> </button> 
+                                </div>
+                            </div>
+                        </div>  <!--end col three-->
+
+                        <div id="collapseFour" class="collapse " aria-labelledby="heading[خعق]" data-parent="#accordionExample">
+                            <div class="wallet-info text-center p-5">
+                                <i class="fas fa-wallet"></i>
+                                <h5>You don't have balance in the wallet.</h5>
+                            </div>
+                        </div> <!--end col four-->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end account info -->
+
+
+
+    <!-- start modal for edit address -->
+    <div class="modal edit-address fade" id="modaleditaddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Address</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1"></label>
+                      <input type="text" class="form-control" id="" aria-describedby="" name="address-name" placeholder="Address name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="" name="number" placeholder="Mobile">
+                      </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- start modal for edit address -->
+
+    <!-- start Modal for add address -->
+    <div class="modal add-address fade" id="addaddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" id="" aria-describedby="" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="" name="description" placeholder="Description Address ">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="" name="num-street" placeholder="Street Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="" name="home-number" placeholder="Home Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="" name="floor-num" placeholder="Floor Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" name="number" placeholder="Phone Number">
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.26601866734!2d31.347820209561217!3d31.04145496206026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2sMansoura%2C%20Mansoura%20Qism%202%2C%20Mansoura%2C%20Dakahlia%20Governorate!5e0!3m2!1sen!2seg!4v1623058443228!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                    <button type="button" class="save btn btn-warning">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start Modal for add address -->
+
+    <!-- start Modal for do review -->
+        <div class="modal modal-review fade" id="reviewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-body text-center"> <span class="myratings"></span>
+                                <h4 class="mt-1">Rate us</h4>
+                                <fieldset class="rating"> 
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4.5" />
+                                    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3.5" />
+                                    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="full" for="star3" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2.5" />
+                                    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1.5" />
+                                    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="0.5" />
+                                    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    <input type="radio" class="reset-option" name="rating" value="reset" />
+                                </fieldset>
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- start Modal for do review -->
+
+
+
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/mixitup.min.js"></script>
+    <script src="javascript/account.js"></script>
+
+    <script>
+        function ViewPage(){
+        window.location='vieworders.html';
+    }
+    </script>
+
+    <script>
+        $("input[type='radio']").click(function(){
+        var sim = $("input[type='radio']:checked").val();
+        //alert(sim);
+        if (sim<3) { $('.myratings').css('color','red'); $(".myratings").text(sim); }else{ $('.myratings').css('color','green'); $(".myratings").text(sim); } });
+    </script>
+
+  </body>
+  </html>

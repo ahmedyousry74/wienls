@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wienls | Checkout</title>
+    <link rel="icon" href="images/Group 120.png">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- start navbar -->
+    <div class="Navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="70px" height="70px" alt=""> </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="partener.html"> Become a partner</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="allResturant.html">All Resturants</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="right my-2 my-lg-0">
+                        <img src="images/Group 1016.png">
+                        <!-- <a href="account.html"><span>My Account</span> </a> -->
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Ahmed Yousry</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="account.html">Profile</a>
+                              <button href="#">Log out</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </nav>
+            
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- toggle sidebar -->
+    <div class="bars">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="55px" height="55px" alt=""> </a>
+            <i class="barToggle fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <button class="close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="">
+            <ul class="navbar-nav m-auto">
+                        
+                <li class="nav-item active">
+                    <a class="bar-item nav-link" href="index.html">Offers</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="bar-item nav-link" href="partener.html"> Become Apartener</a>
+                </li> 
+                <li class="nav-item ">
+                    <a class="bar-item nav-link" href="allResturant.html">All Resturant</a>
+                </li> 
+
+            </ul>
+            <div class="right">
+                <img src="images/Group 1016.png">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Ahmed Yousry</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="account.html">Profile</a>
+                      <button href="#">Log out</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- end toggle sidebar -->
+
+    <!-- start checkout  -->
+    <div class="check-out">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="order-summary">
+                        <div class="check-out-title">
+                            <h3>Order Summary</h3>
+                            <a href="resturantOrder.html">MODIFY ORDER</a>
+                        </div>
+                        <table class="table table-borderless teb">
+                            <thead>
+                              <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Special Request</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">TOTAL</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">Celery Stalk</td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>2x</td>
+                                <td>$8.99</td>
+                                <td>$0.00</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          
+                    </div>
+                    <h3 class="d-inline-block text-muted small">Tips : <span>10$</span></h3>
+                    <h3 class="float-right text-muted small">Price : <span>100$</span></h3>
+                    <h3 class=" text-muted small">coupon : <span>ahmed yousry</span></h3>
+                    
+                </div> <!-- end col -->
+
+                <div class="col-lg-12">
+                    <div class="delivery">
+                        <div class="check-out-title">
+                            <h3>Tips</h3>
+                        </div>
+                        <div class="tips-desc p-3">
+                            <form action="">
+                                <input type="text" name="tips">
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+
+                <div class="col-lg-12">
+                    <div class="delivery">
+                        <div class="check-out-title">
+                            <h3>DELIVERY</h3>
+                            <a href="account.html">Edit</a>
+                            <a href="">Add</a>
+                        </div>
+                        <div class="delivery-desc">
+                            <form action="">
+                                <div class="form-check col">
+                                <a class="float-right" href=""><i class="far fa-edit"></i></a>
+                                <a class="float-right" href=""><i class="far fa-trash-alt"></i></a>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">
+                                    <h3> Address name: <span>GFHGJHJ </span> </h3>
+                                    <h3> Address<span>: El Magzar, Mohammed Rizk GFHGJHJ, HVJVHJJK,4JYYJGHGHJB</span> </h3>
+                                 </label>
+                                </div> <hr>
+                              <div class="form-check col">
+                                <a class="float-right" href=""><i class="far fa-edit"></i></a>
+                                <a class="float-right" href=""><i class="far fa-trash-alt"></i></a>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">
+                                    <h3> Address name: <span>el-mahalla </span> </h3>
+                                    <h3> Address<span>: Ahmed Maher, ahmed yousry, ahmed yousry,ahmed yousry</span> </h3> 
+                                </label>
+                              </div> <hr>
+                            </form> 
+  
+                            
+                            <p>Mobile: <span>+20 1143666711 </span></p>
+                        </div>
+                    </div>
+                </div> <!-- end col --> 
+
+                <div class="col-lg-12">
+                    <div class="special-order">
+                        <div class="check-out-title">
+                            <h3>Special Order</h3>
+                        </div>
+                        <div class="delivery-desc p-2">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+
+
+                <div class="col-lg-12">
+                    <div class=" special-order accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header special-order" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left scheduling" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Scheduling
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <form action="">
+                                  <input type="time">
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+
+                <div class="col-lg-12">
+                    <div class="payment-method">
+                        <div class="check-out-title">
+                            <h3>payment-method</h3>
+                        </div>
+                        <div class="payment-select">
+                                <div class="form-check form-check-inline d-block">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"> <img src="images/Card networks-Acceptance Marks.png" alt=""></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Cash</label>
+                                </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+
+                <button type="submit">Checkout</button>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- end checkout  -->
+
+
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/checkout.js"></script>
+
+    <script>
+    
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+  </body>
+  </html>

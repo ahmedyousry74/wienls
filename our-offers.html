@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wienls | Pizza Hut Menu</title>
+    <link rel="icon" href="images/Group 120.png">
+    <link rel="stylesheet" href="css/restaurantOrder.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- start navbar -->
+    <div class="Navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">      
+
+                <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="70px" height="70px" alt=""> </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="partener.html"> Become a partner</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="allResturant.html">All Resturants</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="right my-2 my-lg-0">
+                        <img src="images/Group 1016.png">
+                        <a href="account.html"><span>My Account</span> </a>
+                    </div>
+
+                </div>
+               
+            </nav>
+            
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- toggle sidebar -->
+    <div class="bars">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="55px" height="55px" alt=""> </a>
+            <i class="barToggle fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <button class="close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="">
+            <ul class="navbar-nav m-auto">
+                        
+                <li class="nav-item active">
+                    <a class="bar-item nav-link" href="index.html">Offers</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="bar-item nav-link" href="partener.html"> Become Apartener</a>
+                </li> 
+                <li class="nav-item ">
+                    <a class="bar-item nav-link" href="allResturant.html">All Resturant</a>
+                </li> 
+
+            </ul>
+            <div class="right">
+                <img src="images/Group 1016.png">
+            </div>
+        </div>
+    </div>
+    <!-- toggle sidebar -->
+
+
+    <!-- frist section -->
+    <div class="restaurant-info">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7">
+                    <div class="restaurant-det text-center">
+                        <div class="media">
+                            <img src="images/hut.png" class="mr-3" alt="" >
+                            <div class="media-body">
+                            <h5 class="mt-0">Pizza Hut</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="stars-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="order-det">
+                                <span> Min Order 30 EUR &nbsp;</span>
+                                <span> | </span>
+                                <span>&nbsp; <i class="fas fa-motorcycle"></i> &nbsp; 10 EUR</span>
+                                <span> | </span>
+                                <span> <i class="fas fa-map-marker-alt"></i> &nbsp; 2.7KM </span>
+                                <span> | </span>
+                                <span>&nbsp; <i class="far fa-clock"></i> &nbsp; 15m:20s</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- end col -->
+
+                <div class="col-lg-1">
+                    <div class="resturant-status">
+                        <p>open</p>
+                    </div>
+                </div> <!-- end col -->
+                  
+                <div class="col-lg-4">
+                    <div class="payment">
+                        <div class="payment-method">
+                            <h5>Payment Method</h5>
+                            <div class="payment-items">
+                                <img src="images/Card networks-Acceptance Marks.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+
+                
+
+            </div>
+        </div>
+    </div> 
+    <!-- end section -->
+
+    <!-- start restaurant menu -->
+    <div class="restaurant-menu">
+        <div class="container">
+            <div class="row">
+        
+                <div class="col-lg-8">
+
+                    <div class="restaurant-menu-select">
+                        <a href="resturantOrder.html">OUR MEALS</a>
+                        <a href="our-offers.html" class="active">OUR OFFERS</a>
+                        <a href="our-reviews.html">OUR REVIEWS</a>
+                        <div class="search-box col-lg-12">
+                            <i class="fas fa-search"></i>
+                            <input type="search" placeholder="search">
+                        </div>
+                    </div> <!-- end col-->
+
+                    <div class="restaurant-menu-shuffle">
+                        <ul>
+                            <li class="active" data-filter="all">All(170)</li>
+                            <li data-filter=".Break-fast"><i class="fas fa-cheese"></i> Break Fast</li>
+                            <li data-filter=".Lunch"><i class="fas fa-utensils"></i> Lunch </li>
+                            <li data-filter=".Drinks"><i class="fas fa-egg"></i> Drinks</li>
+                            <li data-filter=".Fast-food"><i class="fas fa-hamburger"></i> Fast Food</li>
+                            <li data-filter=".Dessert"><i class="fas fa-fish"></i> Dessert</li>
+                        </ul>
+                    </div> <!-- end col-->
+
+                    <div class="restaurant-offers-meals wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="container">
+                            <div class="row">
+
+
+                                    <div class="col-lg-4 col-6 mix">
+                                        <div class="card wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s" >
+                                            <img src="images/7es93lms.png" class="card-img-top" >
+                                            <span class="badge badge-warning">10%</span>
+                                            <div class="card-body">
+                                                <div class="order-desc">
+                                                    <span>Ham Sandwich</span>
+                                                    <span>$54.54</span>
+                                                    <p>ahme dahmed ahmed ahmedf ahmed ahmed ahmed ahmed ahmed </p>
+                                                </div>
+                                                <div class="offer-desc">
+                                                    <span>sandwitch1</span>
+                                                    <span>20$</span>
+                                                </div>
+                                                <div class="offer-desc">
+                                                    <span>sandwitch1</span>         
+                                                    <span>20$</span>
+                                                </div>
+                                                <div class="order-to-cart">
+                                                    <button alt="..." data-toggle="modal" data-target="#locationmodal">Add To Cart  <i class="fas fa-cart-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end col-->
+
+                                <div class="col-lg-4 col-6 mix Lunch">
+                                    <div class="card wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s" >
+                                        <img src="images/7es93lms.png" class="card-img-top" >
+                                        <div class="card-body">
+                                            <div class="order-desc">
+                                                <span>Ham Sandwich</span>
+                                                <span>$54.54</span>
+                                                <p>ahme dahmed ahmed ahmedf ahmed ahmed ahmed ahmed ahmed </p>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="order-to-cart">
+                                                <button alt="..." data-toggle="modal" data-target="#locationmodal">Add To Cart  <i class="fas fa-cart-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col-->
+
+                                <div class="col-lg-4 col-6 mix Drinks">
+                                    <div class="card wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s" >
+                                        <img src="images/7es93lms.png" class="card-img-top" >
+                                        <div class="card-body">
+                                            <div class="order-desc">
+                                                <span>Ham Sandwich</span>
+                                                <span>$54.54</span>
+                                                <p>ahme dahmed ahmed ahmedf ahmed ahmed ahmed ahmed ahmed </p>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="order-to-cart">
+                                                <button alt="..." data-toggle="modal" data-target="#locationmodal">Add To Cart  <i class="fas fa-cart-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col-->
+
+                                <div class="col-lg-4 col-6 mix Fast-food">
+                                    <div class="card wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s" >
+                                        <img src="images/7es93lms.png" class="card-img-top" >
+                                        <span class="badge badge-warning">10%</span>
+                                        <div class="card-body">
+                                            <div class="order-desc">
+                                                <span>Ham Sandwich</span>
+                                                <span>$54.54</span>
+                                                <p>ahme dahmed ahmed ahmedf ahmed ahmed ahmed ahmed ahmed </p>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="order-to-cart">
+                                                <button alt="..." data-toggle="modal" data-target="#locationmodal">Add To Cart  <i class="fas fa-cart-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col-->
+
+                                <div class="col-lg-4 col-6 mix Fast-food">
+                                    <div class="card wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s" >
+                                        <img src="images/7es93lms.png" class="card-img-top" >
+                                        <div class="card-body">
+                                            <div class="order-desc">
+                                                <span>Ham Sandwich</span>
+                                                <span>$54.54</span>
+                                                <p>ahme dahmed ahmed ahmedf ahmed ahmed ahmed ahmed ahmed </p>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="order-to-cart">
+                                                <button alt="..." data-toggle="modal" data-target="#locationmodal">Add To Cart  <i class="fas fa-cart-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col-->
+
+                                <div class="col-lg-4 col-6 mix Dessert">
+                                    <div class="card wow bounceOutDown" data-wow-duration="1s" data-wow-delay="0.5s" >
+                                        <img src="images/7es93lms.png" class="card-img-top" >
+                                        <div class="card-body">
+                                            <div class="order-desc">
+                                                <span>Ham Sandwich</span>
+                                                <span>$54.54</span>
+                                                <p>ahme dahmed ahmed ahmedf ahmed ahmed ahmed ahmed ahmed </p>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="offer-desc">
+                                                <span>sandwitch1</span>
+                                                <span>20$</span>
+                                            </div>
+                                            <div class="order-to-cart">
+                                                <button alt="..." data-toggle="modal" data-target="#locationmodal">Add To Cart  <i class="fas fa-cart-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col-->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- end restaurant menu -->
+
+
+        <!-- start restaurant cart -->
+            <div class="col-lg-4 col-md-12">
+
+
+
+                <div class="restaurant-cart">
+                    <div class="cart text-center">
+                        <h5>Cart</h5>
+                        
+                        <div class="frist-order">
+                            <span>Celery Stalk</span>
+                            <span class="delete float-left"><i class="fas fa-trash"></i></span>
+                            <div class="order-quantity">
+                                <button class="subtract"> - </button> 
+                                <input type="text" class="quantity" value="1">
+                                <button class="add"> + </button>
+                            </div>
+                        </div>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <li>Spices : 20$</li>
+                                    </td>
+                                    <td>
+                                        <li>Medium : 14$</li>
+                                    </td>
+                                    <td>
+                                        <li>Total : 50$</li>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> <hr>
+
+
+                        <div class="frist-order">
+                            <span>Celery Stalk</span>
+                            <span class="delete float-left"><i class="fas fa-trash"></i></span>
+                            <div class="order-quantity">
+                                <button class="subtract"> - </button> 
+                                <input type="text" class="quantity" value="1">
+                                <button class="add"> + </button>
+                            </div>
+                        </div>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <li>Spices : 20$</li>
+                                    </td>
+                                    <td>
+                                        <li>Medium : 14$</li>
+                                    </td>
+                                    <td>
+                                        <li>Total : 50$</li>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="order-other-info">
+                            <div class="subtotal">
+                                <span>Subtotal</span>
+                                <span>57.00</span>
+                            </div>
+                            <div class="service">
+                                <span>Services Charge</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="total">
+                                <span>Total mount</span>
+                                <span>57.00</span>
+                            </div>
+                        </div>
+                        <div class="coupon-code">
+                            <form action="">
+                                <input class="coupon" type="text" placeholder="Coupon code">
+                                <button class="coupon-btn" type="submit">send</button>
+                            </form>
+                        </div> <hr>
+                        <div class="coupon-code">
+                            <form action="">
+                                <input class="tips" type="text" placeholder="Tips">
+                                <button class="tips-btn" type="submit">send</button>
+                            </form>
+                        </div> <hr>
+                        <div class="checkout-button">
+                            <a href="checkout.html"> <button>Proceed To Checkout</button> </a>
+                        </div>
+                    </div>
+
+                </div>  <!--end cart-->
+
+                <div class="delivery text-center">
+                    <h3>Your Meal Has <br> Been Shipped</h3>
+                    <img src="images/Group 1003.png" alt="">
+                    <input type="hidden" id="set-time" value="2"/>
+                    <div id="countdown">
+                    
+                    <div id='tiles' class="color-full"></div>
+                    </div>
+                </div>
+
+            </div> <!--end cart-->
+
+            
+            
+
+            </div>
+        </div>
+    </div>
+    <!-- start restaurant cart -->
+
+
+
+    <!-- start modal for add extra items -->
+
+    <div class="location-modal extra-items-modal offers-modal modal fade" id="locationmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="locationmodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="locationmodalLabel">combo &nbsp; <span class="price">50$</span></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> <!--end title-->
+
+            <div class="modal-body">
+                <div class="media">
+                    <img src="images/a8yt8ici.png" class="mr-3" alt="..." width="60px" height="60px">
+                    <div class="media-body">
+                      <h5 class="mt-0">snyt batats</h5>
+                      <span class="price">20%</span>
+                      <!-- <ul class="list-style"> -->
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    frist additions
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" >
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="form-check form-check">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">chipsy chipsy</label>
+                                          </div>
+                                          <div class="form-check form-check">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">chipsy chipsy chipsy chipsy</label>
+                                          </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left collapsed  text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    second additions
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1" checked>
+                                            <label class="form-check-label" for="">
+                                            combo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option2">
+                                            <label class="form-check-label" for="">
+                                            medium
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option2">
+                                            <label class="form-check-label" for="">
+                                            small
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left  collapsed   text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    second 
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1" checked>
+                                            <label class="form-check-label" for="">
+                                            spicy
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option2">
+                                            <label class="form-check-label" for="">
+                                            not spicy
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>     
+                      <!-- </ul> -->
+                    </div>
+                  </div>
+            </div> <!--frist table-->
+
+            <div class="modal-body">
+                <div class="media">
+                    <img src="images/a8yt8ici.png" class="mr-3" alt="..." width="60px" height="60px">
+                    <div class="media-body">
+                      <h5 class="mt-0">snyt batats</h5>
+                      <span class="price">20%</span>
+                      <ul class="list-style">
+                          <li>mozzarilla <span class="price">3$</span></li>
+                          <li>Chesse <span class="price">3$</span></li>
+                          <li>rice <span class="price">3$</span></li>     
+                      </ul>
+                    </div>
+                  </div>
+            </div> <!--frist table-->
+
+            <div class="modal-button">
+                <button type="submit">Add To Cart</button> 
+            </div> <!--end button-->
+
+          </div>
+        </div>
+    </div>
+
+    <!-- start modal for add extra items -->
+
+
+
+    <!-- scrollIcon -->
+        <div id="scroll">
+            <i class="fa fa-chevron-up scrol"></i>
+        </div>
+    <!-- scrollIcon -->
+          
+
+
+    
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/mixitup.min.js"></script>
+    <script src="javascript/wow.js"></script>
+    <script src="javascript/restaurantOrder.js"></script>
+
+    <script>
+    $('#myCollapsible').on('hidden.bs.collapse', function () {
+        $('.collapse'('toggle'))
+    })
+    </script>
+
+
+
+  </body>
+  </html>

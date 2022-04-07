@@ -1,0 +1,239 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    background-color: #000;
+}
+/* scroll bar */
+::-webkit-scrollbar{
+    background:rgb(217, 0, 17);
+    width:4px;
+    height:15px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background:rgb(217, 0, 17);
+    height:10px;
+  }
+  ::-webkit-scrollbar-track{
+    background:#FFCE00;
+    height:10px;
+  }
+  /* scroll bar */
+/* start logoBrand */
+.brand-logo {
+    padding-top:40px;
+    margin-left:100px;
+}
+
+@media(max-width:991px){
+    .brand-logo {
+        padding-top:20px;
+        margin-left:40px;
+    }
+    .brand-logo img{
+        width:17%;
+        height:17%;
+    }
+}
+@media(max-width:550px){
+    .brand-logo img{
+        width:30%;
+        height:30%;
+    }
+}
+/* end logoBrand */
+
+/* start loginForm */
+.login-page{
+    background-image:url('../images/lcz9nxhoslo-brooke-lark.png');
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    background-color: #000;
+}
+.log-in-overlay{
+    background-image: url('../images/Rectangle\ 439.png');
+    background-size:cover;
+    background-position:center;
+    width:100%;
+    height:100vh;
+}
+.login-form,
+.forget-password-form,
+.activate-password-form{
+    padding:20px;
+    margin-right:250px;
+    background-color:#fff;
+    width:300px;
+    float:right;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    border-radius:10px;
+    z-index:99999;
+}
+
+.login-form h2,
+.forget-password-form h2,
+.activate-password-form h2{
+    color:#000;
+    font-size:20px;
+    margin-bottom:20px;
+    overflow-y:hidden;
+}
+.login-form .form-row,
+.forget-password-form .form-row,
+.activate-password-form .form-row
+{
+    position:relative;
+}
+.login-form form input,
+.forget-password-form input,
+.activate-password-form input
+{
+    display:inline-block !important;
+    border:none;
+    padding:15px;
+    outline:none;
+}
+.login-form form input[placeholder="Email"],
+.login-form form input[placeholder="Password"],
+.forget-password-form input[placeholder="Email"],
+.forget-password-form input[placeholder="Password"]
+.activate-password-form input[placeholder="Password"]
+{
+    color:#777;
+    font-size:13px;
+}
+.login-form form svg,
+.forget-password-form form svg,
+.activate-password-form form svg{
+    color:#777;
+}
+.login-form form svg.eye,
+.forget-password-form svg.eye,
+.activate-password-form svg.eye
+{
+    position:absolute;
+    right:15px;
+    top:18px;
+    cursor:pointer;
+}
+.login-form a,
+.forget-password-form a,
+.activate-password-form a{
+    color:rgb(217, 0, 17);
+    font-size:12px;
+    font-weight:bold;
+    text-decoration:none;
+}
+.login-form a:hover,
+.forget-password-form a:hover,
+.activate-password-form a:hover
+{
+    text-decoration:underline;
+    color:rgb(217, 0, 17)
+}
+.login-form button,
+.forget-password-form button,
+.activate-password-form button {
+    width:100px;
+    height:35px;
+    font-size:13px;
+    background-color:rgb(217, 0, 17);
+    outline:none;
+    border:none;
+    border-radius:20px;
+    color:#fff;
+    font-weight:bold;
+}
+.login-form button:focus,
+.forget-password-form button:focus,
+.activate-password-form button:focus{
+    outline:none;
+}
+.login-form .form-group p,
+.forget-password-form .form-group p,
+.activate-password-form .form-group p{
+    color:#555;
+    font-size:13px;
+    margin-top:20px;
+}
+.login-form .form-group p a,
+.forget-password-form .form-group p a,
+.activate-password-form .form-group p a
+{
+    text-decoration:none;
+    font-size:12px;
+    color:#000;
+    font-weight:bold;
+}
+.login-form .form-group span,
+.forget-password-form .form-group span,
+.activate-password-form .form-group span
+{
+    padding:0px 7px;
+}
+.login-form .form-group span svg,
+.forget-password-form .form-group span svg,
+.activate-password-form .form-group span svg
+{
+    font-size:17px;
+    cursor: pointer;
+}
+.login-form .form-group span .facebook,
+.forget-password-form .form-group span .facebook{
+    color:#4267B2
+}
+.login-form .form-group span .google,
+.forget-password-form .form-group span .google{
+    color:#DB4437
+}
+.login-form .form-group span .instagram,
+.forget-password-form .form-group span .instagram{
+    color:#833AB4
+}
+/* .activate-password-form input {
+    display: block;
+    margin: 40px auto;
+    border: none;
+    padding: 0;
+    width: 260px;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/10ch 2px no-repeat;
+    font: 5ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+  }
+  .activate-password-form input:focus {
+    outline: none;
+    color: dodgerblue;
+  } */
+@media(max-width:991px){
+    .login-form,
+    .forget-password-form,
+    .activate-password-form{
+        margin-right:0px;
+        float:none;
+        margin:10% auto
+    }
+    .login-form .form-group p a,
+    .forget-password-form .form-group p a{
+        font-size:13px;
+    }
+}
+@media(max-width:520px){
+    .login-form,
+    .forget-password-form,
+    .activate-password-form{
+        margin:25% auto
+    }
+}
+/* end loginForm */

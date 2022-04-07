@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wienls | My Account</title>
+    <link rel="icon" href="images/Group 120.png">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- start navbar -->
+    <div class="Navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="70px" height="70px" alt=""> </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Offers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="partener.html"> Become a partner</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="allResturant.html">All Resturants</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="right my-2 my-lg-0">
+                        <img src="images/Group 1016.png">
+                        <a href="account.html"><span>My Account</span> </a>
+                    </div>
+
+                </div>
+               
+            </nav>
+            
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- toggle sidebar -->
+    <div class="bars">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/Group 120.png" width="55px" height="55px" alt=""> </a>
+            <i class="barToggle fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <button class="close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="">
+            <ul class="navbar-nav m-auto">
+                        
+                <li class="nav-item">
+                    <a class="bar-item nav-link" href="index.html">Offers</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="bar-item nav-link" href="partener.html"> Become Apartener</a>
+                </li> 
+                <li class="nav-item ">
+                    <a class="bar-item nav-link" href="allResturant.html">All Resturant</a>
+                </li> 
+
+            </ul>
+            <div class="right">
+                <img src="images/Group 1016.png">
+                <a href="account.html"><span>My Account</span> </a>
+            </div>
+        </div>
+    </div>
+    <!-- toggle sidebar -->
+
+    <div class="my-orders">
+        <div class="container">
+
+       
+    <table class="table table-responsive-lg table-bordered ">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Additions</th>
+            <th scope="col">Unit Cost</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Burger</td>
+            <td>2</td>
+            <td>
+                
+                    size : large(10$) , <br>
+                    type : bla bla (5$) ,<br>
+                    size : bla bla (51$)
+            </td>
+            <td>50</td>
+            <td>100</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <ul class="list-styled details-orders-options">
+                    <li>Total : &nbsp; <span>120$</span></li>
+                    <li>Status : &nbsp;<span>Progress</span></li>
+                    <li>Address : &nbsp;<span>Mansoura</span></li>
+                    <li>Payment : &nbsp; <span>Visa card</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <ul class="list-styled details-orders-options">
+                    <li>Coupon : &nbsp;<span>456525</span></li>
+                    <li>Tips : &nbsp;<span>2$</span></li>
+                    <li>Delivery : &nbsp; <span>Deliver to home</span></li>
+                    <li>Delivery Price : &nbsp;<span>15$</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <div class="delivery text-center">
+                    <input type="hidden" id="set-time" value="120"/>
+                    <div id="countdown">
+                        <div id='tiles' class="color-full"></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="qr-btn">
+          <button class="qr" data-toggle="modal" data-target="#QRCODEBTN">QR Code</button>
+      </div>
+    </div>
+</div>
+
+<!-- start modal for qr code -->
+<div class="modal qr-modal fade" id="QRCODEBTN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/R57f987a2bf5a9d6935a174e2eab36824.png" width="100%" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end modal for qr code -->
+
+
+
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/mixitup.min.js"></script>
+    <script src="javascript/account.js"></script>
+
+    <script>
+        var minutes = $( '#set-time' ).val();
+
+var target_date = new Date().getTime() + ((minutes * 60 ) * 1000); // set the countdown date
+var time_limit = ((minutes * 60 ) * 1000);
+//set actual timer
+setTimeout(
+  function() 
+  {
+    alert( 'done' );
+  }, time_limit );
+
+var days, hours, minutes, seconds; // variables for time units
+
+var countdown = document.getElementById("tiles"); // get tag element
+
+getCountdown();
+
+setInterval(function () { getCountdown(); }, 1000);
+
+function getCountdown(){
+
+	// find the amount of "seconds" between now and target
+	var current_date = new Date().getTime();
+	var seconds_left = (target_date - current_date) / 1000;
+  
+if ( seconds_left >= 0 ) {
+  console.log(time_limit);
+   if ( (seconds_left * 1000 ) < ( time_limit / 2 ) )  {
+     $( '#tiles' ).removeClass('color-full');
+     $( '#tiles' ).addClass('color-half');
+
+		} 
+    if ( (seconds_left * 1000 ) < ( time_limit / 4 ) )  {
+    	$( '#tiles' ).removeClass('color-half');
+    	$( '#tiles' ).addClass('color-empty');
+    }
+  
+	days = pad( parseInt(seconds_left / 86400) );
+	seconds_left = seconds_left % 86400;
+		 
+	hours = pad( parseInt(seconds_left / 3600) );
+	seconds_left = seconds_left % 3600;
+		  
+	minutes = pad( parseInt(seconds_left / 60) );
+	seconds = pad( parseInt( seconds_left % 60 ) );
+
+	// format countdown string + set tag value
+	countdown.innerHTML = "<span>" + hours + ":</span><span>" + minutes + ":</span><span>" + seconds + "</span>"; 
+  
+
+  
+}
+   
+  
+  
+}
+
+function pad(n) {
+	return (n < 10 ? '0' : '') + n;
+}
+    </script>
+
+  </body>
+  </html>
